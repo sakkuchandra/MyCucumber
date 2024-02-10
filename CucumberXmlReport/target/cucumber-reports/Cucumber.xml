@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0.971687">
+<testcase classname="Book Flight and Hotel for Vacation" name="Book Flight for one way trip" time="0.96957">
+<system-out><![CDATA[Given I live in Dublin with 2 adults and 2 kids.............................passed
+And I want to book one way flight ticket from Dublin to London on 22nd Jan 2020.passed
+When I search online........................................................passed
+Then TripAdvisor should provide me options of flights on 22nd Jan 2020......passed
+And Cost of my flight should not be more than 50 Euro per person............passed
+And Tickets should be refundable............................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Book Flight and Hotel for Vacation" name="Book Hotel for one the trip" time="0.002117">
+<system-out><![CDATA[Given I need 1 room with 2 double beds......................................passed
+And I want to book hotel from 22nd Jan 2020 to 25th Jan 2020................passed
+When I search online........................................................passed
+Then TripAdvisor should provide me options of hotels for time period of 22nd Jan 2020 to 25th Jan 2020.passed
+And Fare of my room should not be more than 200 Euro per night..............passed
+And Breakfast should be included in the room fare...........................passed
+]]></system-out>
+</testcase>
+</testsuite>
