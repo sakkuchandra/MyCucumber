@@ -1,0 +1,188 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Book Flight for one way trip",
+        "description": "",
+        "id": "book-flight-and-hotel-for-vacation;book-flight-for-one-way-trip",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1158964500,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I live in Dublin with 2 adults and 2 kids",
+            "match": {
+              "location": "MyHolidayDefinitions.needFlight()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 749800,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I want to book one way flight ticket from Dublin to London on 22nd Jan 2020",
+            "match": {
+              "location": "MyHolidayDefinitions.ticketType()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 606600,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I search online",
+            "match": {
+              "location": "MyHolidayDefinitions.onlineSearch()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 166300,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "TripAdvisor should provide me options of flights on 22nd Jan 2020",
+            "match": {
+              "location": "MyHolidayDefinitions.searchFlightInTripAdvisor()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 329600,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Cost of my flight should not be more than 50 Euro per person",
+            "match": {
+              "location": "MyHolidayDefinitions.flightFare()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 124900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Tickets should be refundable",
+            "match": {
+              "location": "MyHolidayDefinitions.refunableTicket()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@BookOneWayFlight"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Book Hotel for one the trip",
+        "description": "",
+        "id": "book-flight-and-hotel-for-vacation;book-hotel-for-one-the-trip",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 374300,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "I need 1 room with 2 double beds",
+            "match": {
+              "location": "MyHolidayDefinitions.needRoom()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 283700,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "I want to book hotel from 22nd Jan 2020 to 25th Jan 2020",
+            "match": {
+              "location": "MyHolidayDefinitions.stayDuration()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 306000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "I search online",
+            "match": {
+              "location": "MyHolidayDefinitions.onlineSearch()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 286200,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "TripAdvisor should provide me options of hotels for time period of 22nd Jan 2020 to 25th Jan 2020",
+            "match": {
+              "location": "MyHolidayDefinitions.searchRoomInTripAdvisor()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 294700,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Fare of my room should not be more than 200 Euro per night",
+            "match": {
+              "location": "MyHolidayDefinitions.roomFare()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 298400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Breakfast should be included in the room fare",
+            "match": {
+              "location": "MyHolidayDefinitions.includeBreakfast()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@BookHotel"
+          }
+        ]
+      }
+    ],
+    "name": "Book Flight and Hotel for Vacation",
+    "description": "",
+    "id": "book-flight-and-hotel-for-vacation",
+    "keyword": "Feature",
+    "uri": "src/test/java/feature/FlightBooking.feature"
+  }
+]
